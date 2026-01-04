@@ -2,115 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>School Admission Form</title>
+  <title>Admission Form – Central Holy Cross School</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body{
-      font-family: Arial, sans-serif;
-      background:#f4f6f8;
       margin:0;
       padding:0;
+      font-family: Arial, sans-serif;
+      background:#f4f6f8;
     }
+
     .container{
       max-width:600px;
-      margin:30px auto;
-      background:#fff;
-      padding:20px;
+      margin:80px auto;
+      background:#ffffff;
+      padding:30px;
       border-radius:8px;
+      text-align:center;
       box-shadow:0 0 10px rgba(0,0,0,0.1);
     }
+
     h2{
-      text-align:center;
       color:#2c3e50;
+      margin-bottom:10px;
     }
-    label{
-      font-weight:bold;
-      display:block;
-      margin-top:15px;
-    }
-    input, select, textarea{
-      width:100%;
-      padding:10px;
-      margin-top:5px;
-      border:1px solid #ccc;
-      border-radius:4px;
-      font-size:14px;
-    }
-    button{
-      margin-top:20px;
-      width:100%;
-      padding:12px;
-      background:#27ae60;
-      color:#fff;
-      border:none;
+
+    p{
       font-size:16px;
-      border-radius:4px;
+      color:#333;
+    }
+
+    button{
+      margin-top:25px;
+      padding:15px 30px;
+      font-size:18px;
+      background:green;
+      color:white;
+      border:none;
+      border-radius:5px;
       cursor:pointer;
     }
+
     button:hover{
-      background:#219150;
+      background:#1e8e3e;
     }
+
     .note{
-      margin-top:15px;
-      font-size:13px;
+      margin-top:25px;
+      font-size:14px;
       color:#555;
-      text-align:center;
     }
   </style>
 </head>
+
 <body>
 
-<div class="container">
-  <h2>School Admission Form</h2>
+  <div class="container">
+    <h2>Online Admission Form</h2>
 
-  <form id="admissionForm">
-    <label>Student Name</label>
-    <input type="text" name="student_name" required>
+    <p>
+      Please click the button below to fill the official school admission form.
+    </p>
 
-    <label>Father Name</label>
-    <input type="text" name="father_name" required>
+    <!-- 🔴 YAHAN GOOGLE FORM KA LINK PASTE KARNA -->
+    <a href="PASTE_GOOGLE_FORM_LINK_HERE" target="_blank">
+      <button>Fill Admission Form</button>
+    </a>
 
-    <label>Mother Name</label>
-    <input type="text" name="mother_name" required>
-
-    <label>Class Applying For</label>
-    <select name="class" required>
-      <option value="">Select Class</option>
-      <option>Nursery</option>
-      <option>LKG</option>
-      <option>UKG</option>
-      <option>Class 1</option>
-      <option>Class 2</option>
-      <option>Class 3</option>
-      <option>Class 4</option>
-      <option>Class 5</option>
-      <option>Class 6</option>
-      <option>Class 7</option>
-      <option>Class 8</option>
-      <option>Class 9</option>
-      <option>Class 10</option>
-    </select>
-
-    <label>Mobile Number</label>
-    <input type="tel" name="mobile" required>
-
-    <label>Address</label>
-    <textarea name="address" rows="3" required></textarea>
-
-    <button type="submit">Submit Admission Form</button>
-  </form>
-
-  <div class="note">
-    After submission, please wait for confirmation.
+    <div class="note">
+      After submitting the form, please keep the confirmation page
+      as your admission receipt.
+    </div>
   </div>
-</div>
-
-<script>
-  document.getElementById("admissionForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("Admission Successful! (Next step: data storage)");
-  });
-</script>
 
 </body>
 </html>
