@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Central Holy Cross School</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;;
+        }
+
+        /* HEADER */
+        .header{
+            text-align:center;
+            background: #003366;
+            color: white;
+            padding:20px;
+        }
+
+        .header h1{
+            margin:10px 0 0 0;
+        }
+
+        /* HERO IMAGE */
+        .hero img{
+            width:100%;
+            height:350px;
+            object-fit:cover;
+            display:block;
+        }
+
+        /* FORM SECTION */
+        .form-box{
+            background:white;
+            width:90%;
+            max-width:400px;
+            margin:30px auto;
+            padding:20px;
+            border-radius:8px;
+        }
+
+        .form-box h2{
+            text-align:center;
+        }
+
+        input, select{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            background:green;
+            color:white;
+            border:none;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        /* STAFF SECTION */
+        .staff{
+            text-align:center;
+            padding:30px;
+            background:#fff;
+        }
+
+        .staff img{
+            width:150px;
+            height:150px;
+            object-fit:cover;
+            border-radius:50%;
+        }
+
+        .teachers{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+            margin-top:20px;
+        }
+
+        /* FOOTER */
+        .footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        .gallery-img{
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Central Holy Cross School</h1>
+        <p>Admission Open (Nursery to Class 10)</p>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <div class="hero">
+        <img src="images/school.jpg" alt="School Image">
+    </div>
+
+    <!-- ADMISSION FORM -->
+    <div class="form-box">
+        <h2>Admission Inquiry</h2>
+
+        <input type="text" placeholder="Student Name">
+        
+        <select>
+            <option>Select Class</option>
+            <option>Nursery</option>
+            <option>LKG</option>
+            <option>UKG</option>
+            <option>Class 1</option>
+            <option>Class 2</option>
+            <option>Class 3</option>
+            <option>Class 4</option>
+            <option>Class 5</option>
+            <option>Class 6</option>
+            <option>Class 7</option>
+            <option>Class 8</option>
+            <option>Class 9</option>
+            <option>Class 10</option>
+        </select>
+
+        <input type="number" placeholder="Mobile Number">
+
+        <button>Apply for Admission</button>
+        <p>* This is an inquiry form. school will contact you.</p>
+    </div>
+
+    <!-- PRINCIPAL -->
+    <div class="staff">
+        <h2>Our Principal</h2>
+        <img src="images/principal.jpg">
+        <p><b>Principal Name</b><br>M.A, B.Ed</p>
+    </div>
+
+    <!-- TEACHERS -->
+    <div class="staff">
+        <h2>Our Teachers</h2>
+
+        <div class="teachers">
+            <div>
+                <img src="images/teacher1.jpg">
+                <p>Teacher 1<br>B.Sc, B.Ed</p>
+            </div>
+
+            <div>
+                <img src="images/teacher2.jpg">
+                <p>Teacher 2<br>M.A, B.Ed</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>About our school</h2>
+        <p>
+            Central Holy Cross School provides quality education from Nursery to class 10th.
+            We focus on discipline,academic excellence, and overall development of students.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>School Gallery</h2>
+        <div class="flex gallery ">
+            <img src="images/schoolgallery1.jpg" class="gallery-img">
+            <img src="images/schoolgallery2.jpg" class="gallery-img">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>How to Apply</h2>
+        <ol>
+            <li>Fill the admission inquiry form online</li>
+            <li>School will contact you</li>
+            <li>Visit school with documents</li>
+            <li>Final admission confirmation</li>
+        </ol>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>Get Admission Support: 9876543210</p>
+        <p>© Central Holy Cross School</p>
+        <p>Terms & Conditions Apply</p>
+    </div>
+
+</body>
+</html>
